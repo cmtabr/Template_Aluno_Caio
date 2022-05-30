@@ -60,6 +60,8 @@ app.post('/userupdate', urlencodedParser, (req, res) => {
 		if (err) {
 		    throw err;
 		}
+
+		else console.log(sql);
 		res.end();
 	});
 	db.close(); // Fecha o banco
